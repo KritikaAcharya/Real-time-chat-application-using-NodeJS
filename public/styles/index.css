@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+header{
+    background-color: rgb(142, 224, 209);
+    color: rgb(130, 133, 135);
+    padding: 7px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+}
+
+h1{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 10px;
+
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container{
+    background-color: rgb(206, 218, 228);
+    padding: 20px;
+    display: flex;
+    
+}
+
+.users-window{
+    width: 350px;
+    color: rgb(181, 196, 209);
+    background-color: rgb(91, 99, 106);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.users-head{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+.users-head h4{
+    background-color: rgb(203, 167, 203);
+    padding: 0 8px;
+    border-radius: 50px;
+    color: rgb(249, 249, 249);
+}
+
+.users-list p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.chat-window{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(91, 99, 106);
+}
+
