@@ -16,9 +16,15 @@ app.get('/',(req,res)=>{
 // socket.io setup 
 
 const io = require("socket.io")(server);
+var users={};
+
 
 io.on("connection", (socket) => {
-    console.log(socket.id);
+    socket.on("new-user-joined",(username)=>{
+        users[socket.id]=username;
+        console.log(users);
+        socket.broadcast.emit('user-connected',username);
+    })
 });
 
 server.listen(port,()=>{
