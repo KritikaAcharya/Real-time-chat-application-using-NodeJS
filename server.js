@@ -13,6 +13,14 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html');
 })
 
+// socket.io setup 
+
+const io = require("socket.io")(server);
+
+io.on("connection", (socket) => {
+    console.log(socket.id);
+});
+
 server.listen(port,()=>{
     console.log("server started at "+port );
 })
