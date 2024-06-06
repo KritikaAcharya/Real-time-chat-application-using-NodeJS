@@ -20,3 +20,7 @@ function userJoinLeft(name,status){
     div.innerHTML=content;
     chats.appendChild(div);
 }
+
+socket.on('user-disconnected',(user)=>{
+    userJoinLeft(user,'left')
+})

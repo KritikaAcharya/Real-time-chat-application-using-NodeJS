@@ -25,6 +25,10 @@ io.on("connection", (socket) => {
         console.log(users);
         socket.broadcast.emit('user-connected',username);
     })
+    socket.on("disconnect",()=>{
+        socket.broadcast.emit('user-disconnected',user=users[socket.id]);
+        delete users[socket.id];
+    })
 });
 
 server.listen(port,()=>{
