@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 
 main{
@@ -87,7 +88,9 @@ h1{
 
 .chats{
     min-height: 65vh;
+    max-height: 65vh;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .users-join{
